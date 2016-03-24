@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
   });
 
-  function updateCoords(c)
+    public function updateCoords(c)
   {
     $('#x').val(c.x);
     $('#y').val(c.y);
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $('#h').val(c.h);
   };
 
-  function checkCoords()
+    public function checkCoords()
   {
     if (parseInt($('#w').val())) return true;
     alert('Please select a crop region then press submit.');
